@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>我的互联网之旅（2016年）</title>
+	<style type="text/css">
+		*{
+			margin:0;padding:0;font-family:'Microsoft YaHei';
+		}
+		a{
+			display:block;
+			text-align:center;
+		}
+		a:link,a:visited{
+			color:white;
+			text-decoration:none;
+		}
+		a:hover,a:active{
+			color:#696969;
+		}
+		ul li{
+			list-style:none;
+		}
+		ol{
+			padding:0 0 0 30px;
+		}
+		/*适配15吋笔记本电脑及以上*/
+		@media screen and (min-width:1024px){
+			body{
+				width:100%;
+			}
+			li{
+				padding:5px 10px;
+			}
+			.content{
+				width:1230px;
+				margin:0 auto;
+			}
+			#title01{
+				width:100%;
+				height:60px;
+			}
+			#title01 h2{
+				height:60px;
+				line-height:60px;
+				text-align:center;
+			}
+			#title02{
+				width:100%;
+				height:60px;
+				line-height:50px;
+				color:white;
+				background-color:#FF9900;
+			}
+			#title02 ul li{
+				float:left;
+			}
+			.left{
+				float:left;
+				width:100px;
+				background-color:#FF9900;
+			}
+			.main{
+				width:768px;
+				float:left;
+				padding-left:-100px;
+				padding-right:-200px;
+				padding:0 30px;
+			}
+			.right{
+				float:right;
+				width:200px;
+				color:white;
+				padding:5px 30px;
+				background-color:#FF9900;
+			}
+			#myContent01,#myContent02,#myContent03,#p1,#p2,#p3,#p4,#p5{
+				display:none;
+			}
+			#news{
+				display:block;
+				width:768px;
+				height:275px;
+				overflow-y:scroll;
+			}
+			span{
+				color:blue;
+			}
+			#myHTML{
+				float:left;
+				padding:0 30px;
+			}
+			#game{
+				width:320px;
+				height:200px;
+				margin:30px auto;
+			}
+			#title03{
+				width:100%;
+				height:60px;
+				line-height:28px;
+				text-align:center;
+				background-color:#8E8E8E;
+				clear:both;
+			}
+		}
+		
+		/*适配手机*/
+		@media screen and (max-width:600px) and (min-width:320px){
+			body{
+				width:100%;
+			}
+			#title01{
+				text-align:center;
+				background-color:#FF9900;
+			}
+			#title02{
+				width:100%;
+				background-color:black;
+			}
+			#title02 ul li{
+				margin:5px 14px;
+				text-align:center;
+				float:left;
+			}
+			#myConent01,#p1{
+				display:block;
+			}
+			#myContent02,#myContent03,#p2,#p3,#p4,#p5,#ADPhone{
+				display:none;
+			}
+			#myNav01{
+				width:100%;
+				background-color:black;
+			}
+			#myNav01 ul li{
+				padding:5px 10px;
+				text-align:center;
+				float:left;
+			}
+		}
+	</style>
+</head>
+<body>
+<header>
+	<div id="title01">
+		<div class="content">
+			<h2>我的互联网日记</h2>
+		</div>
+	</div>
+</header><!--标题栏结束-->
+<section>
+	<div id="title02">
+		<nav class="content">
+			<ul>
+				<li><a href="#" onclick="myClick(1)">我认识的互联网</a></li>
+				<li><a href="#" onclick="myClick(2)">我知道的大前端</a></li>
+				<li><a href="#" onclick="myClick(3)">我的经历和计划</a></li>
+			</ul>
+		</nav>
+	</div>
+</section><!--大标题结束-->
+<section>
+
+	<div id="myContent01" class="content">
+		<h2>我认识的互联网 - 我眼中的互联网有五个属性</h2>
+		<br/>
+		<nav id="myNav01" class="left">
+			<ul>
+				<li><a href="#" onclick="myPage(0)">软件属性</a></li>
+				<li><a href="#" onclick="myPage(1)">媒体属性</a></li>
+				<li><a href="#" onclick="myPage(2)">广告属性</a></li>
+				<li><a href="#" onclick="myPage(3)">服务属性</a></li>
+				<li><a href="#" onclick="myPage(4)">游戏属性</a></li>
+			</ul>
+		</nav>
+		<section class="main">
+			<article>
+				<div id="p1">互联网功能的实现，需要编写计算机代码，调试代码。<br/>互联网最基本的展现形式 - 网页，也会更新迭代。互联网的生态中也有很多Web应用程序。<br/>
+				<p>下面是一个HTML的基本结构：<br/><br/>
+					&lt;!DOCTYPE html&gt;<br/>
+					&lt;html&gt;<br/>
+					&lt;head&gt;<br/>
+					&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;<mark>Hello world.</mark>&lt;/title&gt;<br/>
+					&lt;/head&gt;<br/>
+					&lt;body&gt;<br/>
+					&lt;div&gt;<mark>Hello world.</mark>&lt;/div&gt;<br/>
+					&lt;/body&gt;<br/>
+					&lt;/html&gt;<br/>
+				</p>
+				</div>
+				<div id="p2">互联网实现的第一个功能就是传递信息，是一个传递信息的媒介。互联网的出现大大提升了沟通的效率。<br/>下面是一段搜狐新闻播报：<br/><br/>
+				<article id="news">
+					<h3>互联网大并购?|《财经》封面报道</h3><time datetime="2016-08-21T12:20:41" pubdate="pubdate">2016-08-21 12:20:41</time><br/>
+					<h4>《财经》记者 宋玮 实习生 申玉哲/文</h4>
+					</br>&nbsp;&nbsp;&nbsp;&nbsp;足够多的资本积累、足够大的公司体量、不相匹配的盈利能力、不断恶化的竞争格局、骤然遇冷的资本市场——当这些因素在一个极短的时间节点上同时爆发，结局只有一个：大并购。<br/>&nbsp;&nbsp;&nbsp;&nbsp;在中国互联网20多年的发展史中，此前还没有一家企业能通过不断的战争和大并购来获得市场地位，程维所创办的滴滴出行是第一个。<br/>&nbsp;&nbsp;&nbsp;&nbsp;2016年8月1日，中国最大的叫车服务公司滴滴出行科技有限公司宣布收购优步中国。此举结束了滴滴多年来同众多竞争对手的惨烈商战，并推动这家成立才四年的在线打车企业估值达到350亿美元。在中国的初创公司中，只有智能手机生产商小米科技有限责任公司以450亿美元估值高过它。但在这四年间，为了竞争和发展，滴滴已经耗费了接近110亿美元现金。<br/>&nbsp;&nbsp;&nbsp;&nbsp;滴滴和优步中国的合并，成为迄今为止中国互联网市场最大的一起并购，这并非偶然。从2015年初起，中国互联网迎来了一个前所未有的并购高潮，产生了诸如滴滴与快的、滴滴与优步中国、58同城与赶集网、美团与大众点评网、携程与去哪儿等若干起并购案。<br/>&nbsp;&nbsp;&nbsp;&nbsp;这一轮并购潮的背景是，资本市场在过去几年内迅速膨胀又迅速遇冷，导致这些公司在短时期内都经历了以下两个阶段：竞争期和并购期。开始时它们通过竞争不断收割更小的对手，联手垄断了市场，但当市场只剩下两家时，过度竞争又变成束缚它们利润的枷锁。而身后强大的战略资本又令彼此都无法将对方打败。此时，合并就成了唯一出路。<br/><span>&nbsp;&nbsp;&nbsp;&nbsp;滴滴董事会成员之一、经纬中国管理合伙人徐传陞告诉《财经》记者，他说自己从事16年风险投资，也未看过2015年这番景象——资金的疯狂涌入，人们在过去十几年中所承受的风险似乎不值一提。但2015年下半年局势陡转又动摇了这些信念，市场上的钱依然很多，一级市场和二级市场的信心却开始崩溃。</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;此时，并购市场开始活跃。据全球金融数据提供商Dealogic向《财经》提供的数据表明，在中国境内发生的科技领域并购中，2015年全年达1509起，同比增长75％，并购金额达1449亿美元，同比增长206％。2016年至今共788起，并购金额达810亿美元。对比五年前，2010年仅363起，2000年前只有11起。同时，科技领域的并购规模、增速，都要远远超过中国整体并购市场。<br/><span>&nbsp;&nbsp;&nbsp;&nbsp;华兴资本创始人兼CEO包凡接受《财经》记者采访时称，这一轮互联网大并购是资本提高效率的表现，资本通过并购实现资源的重组、结构的重构。</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;硅谷投资人、PayPal公司创始人彼得·蒂尔撰文称，垄断企业推动社会进步，因为数年或者数十年的垄断利润是有力的创新动机，利润给了他们规划长远未来的资本。而这些是困在竞争中的企业所不敢想的。“失败者才去竞争，创新者应当选择垄断。”他说。<br/>&nbsp;&nbsp;&nbsp;&nbsp;“过去我们不是保守，是没有能力激进。” 58同城CEO姚劲波对《财经》记者说。<br/>&nbsp;&nbsp;&nbsp;&nbsp;过去中国互联网是一个多少有些畸形的生态链，BAT在金字塔顶端，底部是大量30亿美元以下的公司，中间是断层的。而合并之后，出现了一批中间层公司，并且还在迅速成长中。它们打破了BAT对生态的割裂，也让整个互联网的结构变得更加稳固。<br/>&nbsp;&nbsp;&nbsp;&nbsp;合并亦是中国互联网业自我修复的行动。当市场回归理性后，企业不需要通过大规模烧钱来抢占份额，这就给市场定了一个新规则——所有人都可以创造一些夹缝市场。市场会分化出来，进入一个相对合理的竞争期。<br/><span>&nbsp;&nbsp;&nbsp;&nbsp;接受《财经》记者采访的多位人士表明，未来几年内，BAT将进入相对的“寡头冷战期”，大规模并购相对会减少，但垂直行业开始频繁整合，新巨头正在变成新的买家，线下巨头加速进入线上，与线上公司整合，形成新的竞争。当市场上的买家开始增多，他们会直接促进投资的活跃、创业的活跃。</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;“每一次行业的重大变革，都是重新考虑这个行业‘诞生初始是什么’的时候。”易到专车创始人周航告诉《财经》记者。滴滴与优步中国合并之后，占据了中国专车市场份额的93.1％，做为市场中的第二名，易到只有不到3.3％的份额。但他认为，现在是后进者最好的机会。
+				</article>
+				</div>
+				<div id="p3">互联网可以实现宣传栏、公告栏的功能，而且多媒体技术使得广告变得有声有色，也降低了广告的成本。
+					<svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+						<rect x="100px" y="30px" rx="20" ry="20" width="250" height="100" style="fill:red;stroke:black; stroke-width:5;opacity:0.5"/>
+						<text x="125px" y="85px">就当这是一个很火爆的广告</text>
+					</svg>
+				</div>
+				<div id="p4">互联网还可以替代人工完成一些服务流程，比如代替银行实现金融交易，代替医院实现挂号排队。
+					<div>
+						<br/>一个模拟排队系统界面<br/><br/>
+						<input type="text" name="姓名" required="required" placeholder="请输入姓名" id="mymsg"><br/>
+						请选择您的性别：<input type="radio" name="sex" value="男" checked="check">男
+										<input type="radio" name="sex" value="女">女<br/>
+						<input type="submit" name="提交" value="提交" onclick="mySubmit();">
+					</div>
+				</div>
+				<div id="p5">互联网也改变了人们休闲的方式，打电子游戏也成为了一项运动。我知道一款游戏，全民都在玩，它叫《英雄联盟》。但是我不玩。
+					<br/><br/><h1><mark>还有我自己写的一个游戏:</mark></h1>
+					<div id="game">
+						<h1>价格竞猜游戏</h1>
+						<h4>竞猜规则：</h4>
+						<p>1、商品总价格在200-300之间；</p>
+						<p>2、每个用户有10次竞猜资格；</p>
+						<p>3、若在10次竞猜中猜中价格，会收到红包，若10次都没有猜中，游戏结束。</p><br/>
+						<input id="txt01" type="text" name="输入价格" placeholder="请输入价格">
+						<button id="bt01">参与竞猜</button>
+					</div>
+				</div>
+			</article>
+		</section>
+		<div id="ADPhone" class="right">
+			<article>
+				<h3>关于我</h3><br/><p>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：郭建勋<br/>电话号码：13641496806<br/>微&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;信：13641496806<br/>电子邮件：<br/>947949368@qq.com</p>
+			</article>
+		</div>
+	</div><!--模块一结束-->
+
+	<div id="myContent02" class="content">
+		<div id="myHTML">
+			<h2>我知道的大前端 - 我眼中前端技术</h2>
+			<br/>
+			<p>组建一个完整的网站，需要一定的技术手段和硬件设备。在一个完整的网站中，需要有前端来编写页面显示的内容，编写控件来完成表单提交和验证，需要后端来处理前端传来的数据，并将处理结果反馈到前端。<br/>前端中使用的标准是W3C标准，要求:<br/>
+			<ol>
+				<li>网页的结构，样式和动作分离，建议使用外链CSS和Js脚本，可以提高渲染速度，也方便改版网页。</li>
+				<li>书写标签必须闭合，标签要小写，不乱嵌套，可以提高搜索机器人对网页内容的搜索几率。</li>
+				<li>合理的语义化标签可以使内容被更多的用户访问，被更广泛的设备访问，更少的代码和组件，降低维护成本利于改版。</li>
+				<li>不需要变动页面内容，便可提供打印版本，而不需要复制，提高网站易用性。</li>
+			</ol><br/>
+			在编程方面，网页结构使用HTML标签，第五次修订的HTML5中新增了一些标签，使文档结构更加明确。网页样式使用CSS样式表，第三次大的修改，增加了许多以前需要Js脚本完成的样式。网页的动作需要javascript编写，目前有许多流行的Js集成库，比如jQuery，bootstrap，AngularJS。每个集成库各有特色。<br/>还有一个比较偏向前端开发的后端集成库，Node.JS。<br/>在网站的通讯方面，新诞生的Ajax技术，即异步的javascript和XML，可以实现在不刷新页面的情况下更新网页内容。<br/>前端工程师不仅需要掌握编写网页的语言，还要了解网页设计中的基本操作。
+			</p>
+		</div>
+	</div><!--模块二结束-->
+
+	<div id="myContent03" class="content">
+		<div id="myEx">
+			<h2>我的经历和计划</h2>
+			</br>
+			<p>我和互联网</p>
+			<ol>
+				<li>在大学期间第一次感受到互联网带来的改变，当时很欣赏腾讯的网页设计，想象自己以后也要从事互联网行业的工作。但那时并不知道互联网公司的职位。在校期间疯狂玩弄Photoshop，制作过几个网页平面图，那时我对互联网的理解就是这几张PS效果图。</li>
+				<li>找第一份工作时，投过简历给几家互联网公司，但是不符合职位要求。后来从事了与所学专业相近的工作。</li>
+				<li>在一次偶然的交谈中，我得知“前端工程师”这一职位，于是对互联网公司以及互联网本身又有了新的见解。在学习了相关技术后，我准备挑战一下全栈工程师。</li>
+			</ol>
+			</br>
+			<p>转型后的三年计划</p>
+			<ol>
+				<li>在第一年内，完成工作方式的转型，深入学习前端框架，转换思维。目标是中级工程师。</li>
+				<li>第二年完成技术升级，能独立完成一个前端项目。深入学习后端知识，目标是初级全栈工程师。</li>
+				<li>在第三年，结合现有的硬件基础，深入学习全栈知识，目标达到中级全栈工程师。</li>
+			</ol>
+		</div>
+	</div><!--模块三结束-->
+
+</section><!--主体结束-->
+<footer>
+	<div id="title03">
+		<article><hr><p>----这是底线！----<br/>注意，该网页已适配移动设备，在手机上查看，可是无底线呦！</p></article>
+	</div>
+</footer><!--版权结束-->
+<script type="text/javascript">
+	var winHeight;
+	var winWidth;
+	var mainHeight;
+	window.onload = function(){
+		if(document.documentElement && document.documentElement.clientHeight && document.documentElement.clientWidth)
+		{
+			winHeight = document.documentElement.clientHeight;
+			winWidth = document.documentElement.clientWidth;
+		}
+		mainHeight = winHeight - 210 + 'px';//适配电脑屏幕的高度
+		document.getElementById('myContent01').style.display = 'block';
+		document.getElementById('myContent01').style.height = mainHeight;
+		document.getElementById('myContent01').style.paddingTop = 30 + 'px';
+		document.getElementById('p1').style.display = 'inline';
+
+		/*--------------------------以下适配手机---------------------------------------*/
+		if(winWidth < 768)
+		{
+			document.getElementsByTagName('body').width = winWidth + 'px';
+			document.getElementById('title01').style.height = winHeight * 0.1 + 'px';
+			document.getElementById('title01').style.lineHeight = winHeight * 0.1 + 'px';
+			document.getElementById('title02').style.height = winHeight * 0.05 + 'px';
+			document.getElementById('title03').style.display = 'none';
+			document.getElementById('myNav01').style.height = winHeight * 0.05 + 'px';
+
+			function myClick(num){
+				switch(num){
+					case 1:
+					document.getElementById('myContent01').style.display = 'block';
+					document.getElementById('myContent02').style.display = 'none';
+					document.getElementById('myContent03').style.display = 'none';
+					break;
+
+					case 2:
+					document.getElementById('myContent01').style.display = 'none';
+					document.getElementById('myContent02').style.display = 'block';
+					document.getElementById('myContent03').style.display = 'none';
+					break;
+
+					case 3:
+					document.getElementById('myContent01').style.display = 'none';
+					document.getElementById('myContent02').style.display = 'none';
+					document.getElementById('myContent03').style.display = 'block';
+					break;
+				}
+			}
+
+			function myPage(num){
+				switch(num){
+					case 0:
+					for(var i=1;i<5;i++)
+					{
+						document.getElementById('p' + i).style.display = 'none';
+					}
+					document.getElementById('p1').style.display = 'block';
+					break;
+
+					case 1:
+					for(var i=1;i<5;i++)
+					{
+						document.getElementById('p' + i).style.display = 'none';
+					}
+					document.getElementById('p2').style.display = 'block';
+					break;
+
+					case 2:
+					for(var i=1;i<5;i++)
+					{
+						document.getElementById('p' + i).style.display = 'none';
+					}
+					document.getElementById('p3').style.display = 'block';
+					document.getElementById('ADPhone').style.display = 'block';
+					break;
+
+					case 3:
+					for(var i=1;i<5;i++)
+					{
+						document.getElementById('p' + i).style.display = 'none';
+					}
+					document.getElementById('p4').style.display = 'block';
+					break;
+
+					case 4:
+					for(var i=1;i<5;i++)
+					{
+						document.getElementById('p' + i).style.display = 'none';
+					}
+					document.getElementById('p5').style.display = 'block';
+					break;
+				}
+			}
+		}
+	}
+
+	function myClick(num){
+		switch(num)
+		{
+			case 1:
+			document.getElementById('myContent01').style.display = 'block';
+			document.getElementById('myContent02').style.display = 'none';
+			document.getElementById('myContent03').style.display = 'none';
+			document.getElementById('myContent01').style.height = mainHeight;
+			document.getElementById('myContent01').style.paddingTop = 30 + 'px';
+			break;
+
+			case 2:
+			document.getElementById('myContent01').style.display = 'none';
+			document.getElementById('myContent02').style.display = 'block';
+			document.getElementById('myContent03').style.display = 'none';
+			document.getElementById('myContent02').style.height = mainHeight;
+			document.getElementById('myContent02').style.paddingTop = 30 + 'px';
+			break;
+
+			case 3:
+			document.getElementById('myContent01').style.display = 'none';
+			document.getElementById('myContent02').style.display = 'none';
+			document.getElementById('myContent03').style.display = 'block';
+			document.getElementById('myContent03').style.height = mainHeight;
+			document.getElementById('myContent03').style.paddingTop = 30 + 'px';
+			break;
+		}
+	}
+
+	function myPage(num){
+		var MyPages = ['p1','p2','p3','p4','p5'];
+		for(var n=0; n<MyPages.length; n++){
+			if(n==num)
+			{
+				document.getElementById(MyPages[n]).style.display = 'block';
+			}
+			else{
+				document.getElementById(MyPages[n]).style.display = 'none';
+			}
+		}
+	}
+
+	function mySubmit(){
+		var myMsg = document.getElementById('mymsg').value;
+		if(myMsg=="")
+		{
+			alert('请输入正确的个人信息！');
+		}
+		else
+		{
+			alert('排队成功！');
+		}
+	}
+</script>
+
+<script type="text/javascript">
+	var tx1 = document.getElementById('txt01');
+	var btn1 = document.getElementById('bt01');
+	var prince = parseInt(Math.random()*100+200);
+	var i=0;
+
+	btn1.onclick = function(){
+		if(tx1.value<200 || tx1.value>300)
+		{
+			alert('商品价格在200-300之间，请检查您的输入！');
+		}
+		else
+		{
+			if(i<10)
+			{
+				if(tx1.value == prince)
+				{
+					alert('恭喜您，猜中了！');
+					setTimeout(window.open('http://www.taobao.com','replace'),500)
+					window.close();
+				}
+				else
+				{
+					var n = 9-i;
+					var d = tx1.value - prince;
+					if(d>0)
+					{
+						alert('您的竞猜高于实际价格！');
+					}
+					else
+					{
+						alert('您的竞猜低于实际价格！');
+					}
+					if(n>0)
+					{
+						alert('对不起，没有猜中，您还剩' + n + '次机会！');
+					}
+					else
+					{
+						alert('对不起，竞猜结束！');
+						alert('商品价格为：' + prince);
+					}
+				}
+			}
+			else
+			{
+				alert('请刷新浏览器！');
+			}
+			i= i+1;
+		}
+	}
+</script>
+</body>
+</html>
